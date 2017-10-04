@@ -1,0 +1,19 @@
+Started by user [8mha:////4KDOoKgKatoAMNlxxwEOtOfIlS2BukGIuVEdkYFBGKFuAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/dLi1CL9gsSy1By93MzsjMSc5IzSbACuENQTywAAAA==[0mPavel Mikhalchuk
+Building in workspace /var/jenkins_home/workspace/Backup Jenkins
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins7072667939714056395.sh
++ git clone https://github.com/pavel-mikhalchuk/kuberjenkins.git .
+Cloning into '.'...
++ cp /var/jenkins_home/config.xml ./
++ git config user.email jenkins@kube.com
++ git config user.name Jenkins
++ git add README.md config.xml
++ git commit -m Jenkins update NUMBER
+[master 8c485ec] Jenkins update NUMBER
+ 1 file changed, 39 insertions(+)
+ create mode 100644 config.xml
++ git push
+fatal: could not read Username for 'https://github.com': No such device or address
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
