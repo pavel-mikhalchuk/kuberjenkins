@@ -1,0 +1,33 @@
+Started by user [8mha:////4KDOoKgKatoAMNlxxwEOtOfIlS2BukGIuVEdkYFBGKFuAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/dLi1CL9gsSy1By93MzsjMSc5IzSbACuENQTywAAAA==[0mPavel Mikhalchuk
+Building in workspace /var/jenkins_home/workspace/Backup Jenkins
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/pavel-mikhalchuk/kuberjenkins.git # timeout=10
+Fetching upstream changes from https://github.com/pavel-mikhalchuk/kuberjenkins.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/pavel-mikhalchuk/kuberjenkins.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ead6b3f403fb083886940c0aa2b05affc5a6668c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ead6b3f403fb083886940c0aa2b05affc5a6668c
+Commit message: "Initial commit"
+ > git rev-list ead6b3f403fb083886940c0aa2b05affc5a6668c # timeout=10
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins4645710403110237594.sh
++ cp /var/jenkins_home/config.xml ./
++ git config user.email jenkins@kube.com
++ git config user.name Jenkins
++ git add README.md config.xml
++ git commit -m Jenkins update NUMBER
+[detached HEAD 25e295d] Jenkins update NUMBER
+ 1 file changed, 39 insertions(+)
+ create mode 100644 config.xml
++ git push
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

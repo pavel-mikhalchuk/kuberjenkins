@@ -1,0 +1,21 @@
+Started by user [8mha:////4KDOoKgKatoAMNlxxwEOtOfIlS2BukGIuVEdkYFBGKFuAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/dLi1CL9gsSy1By93MzsjMSc5IzSbACuENQTywAAAA==[0mPavel Mikhalchuk
+Building in workspace /var/jenkins_home/workspace/Backup Jenkins
+Cloning the remote Git repository
+Cloning repository https://github.com/pavel-mikhalchuk/kuberjenkins.git
+ > git init /var/jenkins_home/workspace/Backup Jenkins # timeout=10
+Fetching upstream changes from https://github.com/pavel-mikhalchuk/kuberjenkins.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/pavel-mikhalchuk/kuberjenkins.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/pavel-mikhalchuk/kuberjenkins.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/pavel-mikhalchuk/kuberjenkins.git # timeout=10
+Fetching upstream changes from https://github.com/pavel-mikhalchuk/kuberjenkins.git
+ > git fetch --tags --progress https://github.com/pavel-mikhalchuk/kuberjenkins.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ead6b3f403fb083886940c0aa2b05affc5a6668c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ead6b3f403fb083886940c0aa2b05affc5a6668c
+Commit message: "Initial commit"
+First time build. Skipping changelog.
+Finished: SUCCESS
