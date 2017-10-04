@@ -13,26 +13,28 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>git clone https://github.com/pavel-mikhalchuk/kuberjenkins.git .
-
-cp /var/jenkins_home/* ./
-cp -r /var/jenkins_home/jobs ./
-cp -r /var/jenkins_home/logs ./
-cp -r /var/jenkins_home/nodes ./
-cp -r /var/jenkins_home/plugins ./
-cp -r /var/jenkins_home/secrets ./
-cp -r /var/jenkins_home/updates ./
-cp -r /var/jenkins_home/userContent ./
-cp -r /var/jenkins_home/users ./
-cp -r /var/jenkins_home/workflow-libs ./
+      <command>git clone https://pavel-mikhalchuk-belarus:123qweasd@github.com/pavel-mikhalchuk/kuberjenkins.git .</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>cp /var/jenkins_home/* src/ || exit 0</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>cp -r /var/jenkins_home/jobs src/
+cp -r /var/jenkins_home/logs src/
+cp -r /var/jenkins_home/nodes src/
+cp -r /var/jenkins_home/plugins src/
+cp -r /var/jenkins_home/secrets src/
+cp -r /var/jenkins_home/updates src/
+cp -r /var/jenkins_home/userContent src/
+cp -r /var/jenkins_home/users src/
+cp -r /var/jenkins_home/workflow-libs src/
 
 git config user.email &quot;jenkins@kube.com&quot;
 git config user.name &quot;Jenkins&quot;
 
-git add *
+git add -A
 git commit -m &quot;Jenkins update ${BUILD-NUMBER}&quot;
 git push</command>
-      <unstableReturn>20</unstableReturn>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
