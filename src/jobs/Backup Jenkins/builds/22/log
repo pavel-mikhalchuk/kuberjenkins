@@ -2,10 +2,10 @@ Started by user [8mha:////4KDOoKgKatoAMNlxxwEOtOfIlS2BukGIuVEdkYFBGKFuAAAAoh+LC
 Building in workspace /var/jenkins_home/workspace/Backup Jenkins
 [WS-CLEANUP] Deleting project workspace...
 [WS-CLEANUP] Done
-[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins2641428324431667952.sh
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins2245377856647230946.sh
 + git clone https://pavel-mikhalchuk-belarus:123qweasd@github.com/pavel-mikhalchuk/kuberjenkins.git .
 Cloning into '.'...
-[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins4943422615865464593.sh
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins1145492913280631542.sh
 + cp /var/jenkins_home/README.md /var/jenkins_home/config.xml /var/jenkins_home/copy_reference_file.log /var/jenkins_home/hudson.model.UpdateCenter.xml /var/jenkins_home/hudson.plugins.emailext.ExtendedEmailPublisher.xml /var/jenkins_home/hudson.plugins.git.GitTool.xml /var/jenkins_home/identity.key.enc /var/jenkins_home/init.groovy.d /var/jenkins_home/jenkins.CLI.xml /var/jenkins_home/jenkins.install.InstallUtil.lastExecVersion /var/jenkins_home/jenkins.install.UpgradeWizard.state /var/jenkins_home/jenkins.model.DownloadSettings.xml /var/jenkins_home/jenkins.security.QueueItemAuthenticatorConfiguration.xml /var/jenkins_home/jenkins.security.UpdateSiteWarningsConfiguration.xml /var/jenkins_home/jobs /var/jenkins_home/logs /var/jenkins_home/nodeMonitors.xml /var/jenkins_home/nodes /var/jenkins_home/org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer.xml /var/jenkins_home/plugins /var/jenkins_home/secret.key /var/jenkins_home/secret.key.not-so-secret /var/jenkins_home/secrets /var/jenkins_home/updates /var/jenkins_home/userContent /var/jenkins_home/users /var/jenkins_home/war /var/jenkins_home/workflow-libs /var/jenkins_home/workspace src/
 cp: -r not specified; omitting directory '/var/jenkins_home/init.groovy.d'
 cp: -r not specified; omitting directory '/var/jenkins_home/jobs'
@@ -20,26 +20,5 @@ cp: -r not specified; omitting directory '/var/jenkins_home/war'
 cp: -r not specified; omitting directory '/var/jenkins_home/workflow-libs'
 cp: -r not specified; omitting directory '/var/jenkins_home/workspace'
 + exit 0
-[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins3884737329709581320.sh
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins3564736415524960751.sh
 + cp -r /var/jenkins_home/jobs src/
-+ cp -r /var/jenkins_home/logs src/
-+ cp -r /var/jenkins_home/nodes src/
-+ cp -r /var/jenkins_home/plugins src/
-+ cp -r /var/jenkins_home/secrets src/
-+ cp -r /var/jenkins_home/updates src/
-+ cp -r /var/jenkins_home/userContent src/
-+ cp -r /var/jenkins_home/users src/
-+ cp -r /var/jenkins_home/workflow-libs src/
-+ git config user.email jenkins@kube.com
-+ git config user.name Jenkins
-+ git add -A
-+ git commit -m Jenkins update Backup Jenkins-21
-[master bc737f0] Jenkins update Backup Jenkins-21
- 8 files changed, 234 insertions(+), 4 deletions(-)
- create mode 100644 src/jobs/Backup Jenkins/builds/20/build.xml
- create mode 100644 src/jobs/Backup Jenkins/builds/21/changelog.xml
- create mode 100644 src/jobs/Backup Jenkins/builds/21/log
-+ git push
-To https://github.com/pavel-mikhalchuk/kuberjenkins.git
-   4367f3a..bc737f0  master -> master
-Finished: SUCCESS
