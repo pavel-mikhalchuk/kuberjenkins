@@ -14,6 +14,7 @@ spec:
       containers:
       - name: jenkins
         image: gcr.io/kubernetes-180823/kuberjenkins
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
 ---
