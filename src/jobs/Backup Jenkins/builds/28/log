@@ -23,3 +23,87 @@ cp: -r not specified; omitting directory '/var/jenkins_home/workspace'
 + exit 0
 [Backup Jenkins] $ /bin/sh -xe /tmp/jenkins1715268356823866042.sh
 + cp -r /var/jenkins_home/jobs src/
++ cp -r /var/jenkins_home/logs src/
++ cp -r /var/jenkins_home/nodes src/
++ cp -r /var/jenkins_home/plugins src/
++ cp -r /var/jenkins_home/secrets src/
++ cp -r /var/jenkins_home/updates src/
++ cp -r /var/jenkins_home/userContent src/
++ cp -r /var/jenkins_home/users src/
++ cp -r /var/jenkins_home/workflow-libs src/
++ git config user.email jenkins@kube.com
++ git config user.name Jenkins
++ git add -A
++ git commit -m Jenkins backup job: Backup Jenkins-28
+[master d52f843] Jenkins backup job: Backup Jenkins-28
+ 71 files changed, 35 insertions(+), 3717 deletions(-)
+ delete mode 100644 src/jobs/Backup Jenkins/builds/1/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/1/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/1/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/10/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/10/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/11/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/11/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/11/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/12/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/12/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/12/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/13/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/13/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/13/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/14/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/14/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/14/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/15/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/15/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/15/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/16/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/16/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/16/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/17/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/17/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/17/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/18/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/18/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/18/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/19/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/19/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/19/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/2/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/2/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/2/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/20/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/20/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/20/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/21/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/21/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/22/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/22/log
+ rename src/jobs/Backup Jenkins/builds/{22 => 27}/build.xml (83%)
+ rename src/jobs/Backup Jenkins/builds/{10 => 28}/changelog.xml (100%)
+ rename src/jobs/Backup Jenkins/builds/{21 => 28}/log (71%)
+ delete mode 100644 src/jobs/Backup Jenkins/builds/3/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/3/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/3/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/4/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/4/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/4/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/5/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/5/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/5/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/6/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/6/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/6/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/7/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/7/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/7/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/8/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/8/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/8/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/9/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/9/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/9/log
++ git push
+To https://github.com/pavel-mikhalchuk/kuberjenkins.git
+   ca7c5f6..d52f843  master -> master
+Finished: SUCCESS

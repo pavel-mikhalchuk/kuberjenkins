@@ -2,10 +2,11 @@ Started by user [8mha:////4KDOoKgKatoAMNlxxwEOtOfIlS2BukGIuVEdkYFBGKFuAAAAoh+LC
 Building in workspace /var/jenkins_home/workspace/Backup Jenkins
 [WS-CLEANUP] Deleting project workspace...
 [WS-CLEANUP] Done
-[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins3404912296983349275.sh
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins4906914240048487092.sh
 + git clone https://pavel-mikhalchuk-belarus:123qweasd@github.com/pavel-mikhalchuk/kuberjenkins.git .
 Cloning into '.'...
-[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins7656342019086580375.sh
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins6754198830008657243.sh
++ rm -rf src/README.md src/config.xml src/copy_reference_file.log src/hudson.model.UpdateCenter.xml src/hudson.plugins.emailext.ExtendedEmailPublisher.xml src/hudson.plugins.git.GitTool.xml src/identity.key.enc src/jenkins.CLI.xml src/jenkins.install.InstallUtil.lastExecVersion src/jenkins.install.UpgradeWizard.state src/jenkins.model.DownloadSettings.xml src/jenkins.security.QueueItemAuthenticatorConfiguration.xml src/jenkins.security.UpdateSiteWarningsConfiguration.xml src/jobs src/logs src/nodeMonitors.xml src/org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer.xml src/plugins src/secret.key src/secret.key.not-so-secret src/secrets src/updates src/userContent src/users
 + cp /var/jenkins_home/README.md /var/jenkins_home/config.xml /var/jenkins_home/copy_reference_file.log /var/jenkins_home/hudson.model.UpdateCenter.xml /var/jenkins_home/hudson.plugins.emailext.ExtendedEmailPublisher.xml /var/jenkins_home/hudson.plugins.git.GitTool.xml /var/jenkins_home/identity.key.enc /var/jenkins_home/init.groovy.d /var/jenkins_home/jenkins.CLI.xml /var/jenkins_home/jenkins.install.InstallUtil.lastExecVersion /var/jenkins_home/jenkins.install.UpgradeWizard.state /var/jenkins_home/jenkins.model.DownloadSettings.xml /var/jenkins_home/jenkins.security.QueueItemAuthenticatorConfiguration.xml /var/jenkins_home/jenkins.security.UpdateSiteWarningsConfiguration.xml /var/jenkins_home/jobs /var/jenkins_home/logs /var/jenkins_home/nodeMonitors.xml /var/jenkins_home/nodes /var/jenkins_home/org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer.xml /var/jenkins_home/plugins /var/jenkins_home/secret.key /var/jenkins_home/secret.key.not-so-secret /var/jenkins_home/secrets /var/jenkins_home/updates /var/jenkins_home/userContent /var/jenkins_home/users /var/jenkins_home/war /var/jenkins_home/workflow-libs /var/jenkins_home/workspace src/
 cp: -r not specified; omitting directory '/var/jenkins_home/init.groovy.d'
 cp: -r not specified; omitting directory '/var/jenkins_home/jobs'
@@ -20,26 +21,5 @@ cp: -r not specified; omitting directory '/var/jenkins_home/war'
 cp: -r not specified; omitting directory '/var/jenkins_home/workflow-libs'
 cp: -r not specified; omitting directory '/var/jenkins_home/workspace'
 + exit 0
-[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins328485386301259680.sh
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins7711697848877185401.sh
 + cp -r /var/jenkins_home/jobs src/
-+ cp -r /var/jenkins_home/logs src/
-+ cp -r /var/jenkins_home/nodes src/
-+ cp -r /var/jenkins_home/plugins src/
-+ cp -r /var/jenkins_home/secrets src/
-+ cp -r /var/jenkins_home/updates src/
-+ cp -r /var/jenkins_home/userContent src/
-+ cp -r /var/jenkins_home/users src/
-+ cp -r /var/jenkins_home/workflow-libs src/
-+ git config user.email jenkins@kube.com
-+ git config user.name Jenkins
-+ git add -A
-+ git commit -m Jenkins backup job: Backup Jenkins-23
-[master 5b113fa] Jenkins backup job: Backup Jenkins-23
- 7 files changed, 76 insertions(+), 3 deletions(-)
- create mode 100644 src/jobs/Backup Jenkins/builds/22/build.xml
- create mode 100644 src/jobs/Backup Jenkins/builds/23/changelog.xml
- create mode 100644 src/jobs/Backup Jenkins/builds/23/log
-+ git push
-To https://github.com/pavel-mikhalchuk/kuberjenkins.git
-   ba090f7..5b113fa  master -> master
-Finished: SUCCESS
