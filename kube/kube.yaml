@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: jenkins
-        image: jenkins/jenkins:lts
+        image: gcr.io/kubernetes-180823/kuberjenkins
         ports:
         - containerPort: 8080
 ---
