@@ -33,7 +33,7 @@ git config user.email &quot;jenkins@kube.com&quot;
 git config user.name &quot;Jenkins&quot;
 
 git add -A
-git commit -m &quot;Jenkins update ${BUILD-NUMBER}&quot;
+git commit -m &quot;Jenkins update ${JOB_NAME}-${BUILD_NUMBER}&quot;
 git push</command>
     </hudson.tasks.Shell>
   </builders>
