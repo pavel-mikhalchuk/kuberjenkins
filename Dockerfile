@@ -1,5 +1,5 @@
 FROM jenkins/jenkins:lts
 
-COPY src/* /usr/shared/jenkins/ref/
+COPY src/ /usr/share/jenkins/ref/
 
 ENTRYPOINT ["/bin/tini", "--", "/usr/local/bin/jenkins.sh"] 
