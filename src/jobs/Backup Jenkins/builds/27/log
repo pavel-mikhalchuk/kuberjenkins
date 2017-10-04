@@ -38,3 +38,24 @@ lrwxrwxrwx 1 jenkins jenkins    2 Oct  4 17:56 lastUnstableBuild -> -1
 lrwxrwxrwx 1 jenkins jenkins    2 Oct  4 19:20 lastUnsuccessfulBuild -> -1
 -rw-r--r-- 1 jenkins jenkins    0 Oct  4 17:56 legacyIds
 + cp -r /var/jenkins_home/jobs src/
++ cp -r /var/jenkins_home/logs src/
++ cp -r /var/jenkins_home/nodes src/
++ cp -r /var/jenkins_home/plugins src/
++ cp -r /var/jenkins_home/secrets src/
++ cp -r /var/jenkins_home/updates src/
++ cp -r /var/jenkins_home/userContent src/
++ cp -r /var/jenkins_home/users src/
++ cp -r /var/jenkins_home/workflow-libs src/
++ git config user.email jenkins@kube.com
++ git config user.name Jenkins
++ git add -A
++ git commit -m Jenkins backup job: Backup Jenkins-27
+[master ca7c5f6] Jenkins backup job: Backup Jenkins-27
+ 8 files changed, 94 insertions(+), 4 deletions(-)
+ create mode 100644 src/jobs/Backup Jenkins/builds/26/build.xml
+ create mode 100644 src/jobs/Backup Jenkins/builds/27/changelog.xml
+ create mode 100644 src/jobs/Backup Jenkins/builds/27/log
++ git push
+To https://github.com/pavel-mikhalchuk/kuberjenkins.git
+   a308371..ca7c5f6  master -> master
+Finished: SUCCESS

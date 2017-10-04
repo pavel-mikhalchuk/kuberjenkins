@@ -25,11 +25,11 @@
       <command>git clone https://pavel-mikhalchuk-belarus:123qweasd@github.com/pavel-mikhalchuk/kuberjenkins.git .</command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
-      <command>cp /var/jenkins_home/* src/ || exit 0</command>
+      <command>rm -rf src/*
+cp /var/jenkins_home/* src/ || exit 0</command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
-      <command>ls -al /var/jenkins_home/jobs/Backup\ Jenkins/builds
-cp -r /var/jenkins_home/jobs src/
+      <command>cp -r /var/jenkins_home/jobs src/
 cp -r /var/jenkins_home/logs src/
 cp -r /var/jenkins_home/nodes src/
 cp -r /var/jenkins_home/plugins src/
