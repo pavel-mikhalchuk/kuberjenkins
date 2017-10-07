@@ -1,0 +1,109 @@
+Started by user [8mha:////4KDOoKgKatoAMNlxxwEOtOfIlS2BukGIuVEdkYFBGKFuAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/dLi1CL9gsSy1By93MzsjMSc5IzSbACuENQTywAAAA==[0mPavel Mikhalchuk
+Building in workspace /var/jenkins_home/workspace/Backup Jenkins
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins3079097913171353802.sh
++ git clone https://pavel-mikhalchuk-belarus:123qweasd@github.com/pavel-mikhalchuk/kuberjenkins.git .
+Cloning into '.'...
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins8404054179257698663.sh
++ rm -rf src/README.md src/config.xml src/copy_reference_file.log src/hudson.model.UpdateCenter.xml src/hudson.plugins.emailext.ExtendedEmailPublisher.xml src/hudson.plugins.git.GitTool.xml src/identity.key.enc src/jenkins.CLI.xml src/jenkins.install.InstallUtil.lastExecVersion src/jenkins.install.UpgradeWizard.state src/jenkins.model.DownloadSettings.xml src/jenkins.security.QueueItemAuthenticatorConfiguration.xml src/jenkins.security.UpdateSiteWarningsConfiguration.xml src/jobs src/logs src/nodeMonitors.xml src/org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer.xml src/plugins src/secret.key src/secret.key.not-so-secret src/secrets src/updates src/userContent src/users
++ cp /var/jenkins_home/README.md /var/jenkins_home/config.xml /var/jenkins_home/copy_reference_file.log /var/jenkins_home/hudson.model.UpdateCenter.xml /var/jenkins_home/hudson.plugins.emailext.ExtendedEmailPublisher.xml /var/jenkins_home/hudson.plugins.git.GitTool.xml /var/jenkins_home/identity.key.enc /var/jenkins_home/init.groovy.d /var/jenkins_home/jenkins.CLI.xml /var/jenkins_home/jenkins.install.InstallUtil.lastExecVersion /var/jenkins_home/jenkins.install.UpgradeWizard.state /var/jenkins_home/jenkins.model.DownloadSettings.xml /var/jenkins_home/jenkins.security.QueueItemAuthenticatorConfiguration.xml /var/jenkins_home/jenkins.security.UpdateSiteWarningsConfiguration.xml /var/jenkins_home/jobs /var/jenkins_home/logs /var/jenkins_home/nodeMonitors.xml /var/jenkins_home/nodes /var/jenkins_home/org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer.xml /var/jenkins_home/plugins /var/jenkins_home/secret.key /var/jenkins_home/secret.key.not-so-secret /var/jenkins_home/secrets /var/jenkins_home/updates /var/jenkins_home/userContent /var/jenkins_home/users /var/jenkins_home/war /var/jenkins_home/workflow-libs /var/jenkins_home/workspace src/
+cp: -r not specified; omitting directory '/var/jenkins_home/init.groovy.d'
+cp: -r not specified; omitting directory '/var/jenkins_home/jobs'
+cp: -r not specified; omitting directory '/var/jenkins_home/logs'
+cp: -r not specified; omitting directory '/var/jenkins_home/nodes'
+cp: -r not specified; omitting directory '/var/jenkins_home/plugins'
+cp: -r not specified; omitting directory '/var/jenkins_home/secrets'
+cp: -r not specified; omitting directory '/var/jenkins_home/updates'
+cp: -r not specified; omitting directory '/var/jenkins_home/userContent'
+cp: -r not specified; omitting directory '/var/jenkins_home/users'
+cp: -r not specified; omitting directory '/var/jenkins_home/war'
+cp: -r not specified; omitting directory '/var/jenkins_home/workflow-libs'
+cp: -r not specified; omitting directory '/var/jenkins_home/workspace'
++ exit 0
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins1715268356823866042.sh
++ cp -r /var/jenkins_home/jobs src/
++ cp -r /var/jenkins_home/logs src/
++ cp -r /var/jenkins_home/nodes src/
++ cp -r /var/jenkins_home/plugins src/
++ cp -r /var/jenkins_home/secrets src/
++ cp -r /var/jenkins_home/updates src/
++ cp -r /var/jenkins_home/userContent src/
++ cp -r /var/jenkins_home/users src/
++ cp -r /var/jenkins_home/workflow-libs src/
++ git config user.email jenkins@kube.com
++ git config user.name Jenkins
++ git add -A
++ git commit -m Jenkins backup job: Backup Jenkins-28
+[master d52f843] Jenkins backup job: Backup Jenkins-28
+ 71 files changed, 35 insertions(+), 3717 deletions(-)
+ delete mode 100644 src/jobs/Backup Jenkins/builds/1/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/1/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/1/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/10/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/10/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/11/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/11/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/11/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/12/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/12/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/12/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/13/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/13/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/13/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/14/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/14/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/14/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/15/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/15/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/15/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/16/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/16/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/16/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/17/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/17/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/17/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/18/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/18/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/18/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/19/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/19/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/19/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/2/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/2/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/2/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/20/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/20/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/20/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/21/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/21/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/22/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/22/log
+ rename src/jobs/Backup Jenkins/builds/{22 => 27}/build.xml (83%)
+ rename src/jobs/Backup Jenkins/builds/{10 => 28}/changelog.xml (100%)
+ rename src/jobs/Backup Jenkins/builds/{21 => 28}/log (71%)
+ delete mode 100644 src/jobs/Backup Jenkins/builds/3/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/3/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/3/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/4/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/4/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/4/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/5/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/5/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/5/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/6/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/6/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/6/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/7/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/7/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/7/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/8/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/8/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/8/log
+ delete mode 100644 src/jobs/Backup Jenkins/builds/9/build.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/9/changelog.xml
+ delete mode 100644 src/jobs/Backup Jenkins/builds/9/log
++ git push
+To https://github.com/pavel-mikhalchuk/kuberjenkins.git
+   ca7c5f6..d52f843  master -> master
+Finished: SUCCESS

@@ -1,0 +1,61 @@
+Started by user [8mha:////4KDOoKgKatoAMNlxxwEOtOfIlS2BukGIuVEdkYFBGKFuAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/dLi1CL9gsSy1By93MzsjMSc5IzSbACuENQTywAAAA==[0mPavel Mikhalchuk
+Building in workspace /var/jenkins_home/workspace/Backup Jenkins
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins3118378736435179811.sh
++ git clone https://pavel-mikhalchuk-belarus:123qweasd@github.com/pavel-mikhalchuk/kuberjenkins.git .
+Cloning into '.'...
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins6001089348240952012.sh
++ cp /var/jenkins_home/README.md /var/jenkins_home/config.xml /var/jenkins_home/copy_reference_file.log /var/jenkins_home/hudson.model.UpdateCenter.xml /var/jenkins_home/hudson.plugins.emailext.ExtendedEmailPublisher.xml /var/jenkins_home/hudson.plugins.git.GitTool.xml /var/jenkins_home/identity.key.enc /var/jenkins_home/init.groovy.d /var/jenkins_home/jenkins.CLI.xml /var/jenkins_home/jenkins.install.InstallUtil.lastExecVersion /var/jenkins_home/jenkins.install.UpgradeWizard.state /var/jenkins_home/jenkins.model.DownloadSettings.xml /var/jenkins_home/jenkins.security.QueueItemAuthenticatorConfiguration.xml /var/jenkins_home/jenkins.security.UpdateSiteWarningsConfiguration.xml /var/jenkins_home/jobs /var/jenkins_home/logs /var/jenkins_home/nodeMonitors.xml /var/jenkins_home/nodes /var/jenkins_home/org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer.xml /var/jenkins_home/plugins /var/jenkins_home/secret.key /var/jenkins_home/secret.key.not-so-secret /var/jenkins_home/secrets /var/jenkins_home/updates /var/jenkins_home/userContent /var/jenkins_home/users /var/jenkins_home/war /var/jenkins_home/workflow-libs /var/jenkins_home/workspace src/
+cp: -r not specified; omitting directory '/var/jenkins_home/init.groovy.d'
+cp: -r not specified; omitting directory '/var/jenkins_home/jobs'
+cp: -r not specified; omitting directory '/var/jenkins_home/logs'
+cp: -r not specified; omitting directory '/var/jenkins_home/nodes'
+cp: -r not specified; omitting directory '/var/jenkins_home/plugins'
+cp: -r not specified; omitting directory '/var/jenkins_home/secrets'
+cp: -r not specified; omitting directory '/var/jenkins_home/updates'
+cp: -r not specified; omitting directory '/var/jenkins_home/userContent'
+cp: -r not specified; omitting directory '/var/jenkins_home/users'
+cp: -r not specified; omitting directory '/var/jenkins_home/war'
+cp: -r not specified; omitting directory '/var/jenkins_home/workflow-libs'
+cp: -r not specified; omitting directory '/var/jenkins_home/workspace'
++ exit 0
+[Backup Jenkins] $ /bin/sh -xe /tmp/jenkins9129292035621814631.sh
++ ls -al /var/jenkins_home/jobs/Backup Jenkins/builds
+total 32
+drwxr-xr-x 8 jenkins jenkins 4096 Oct  4 19:38 .
+drwxr-xr-x 3 jenkins jenkins 4096 Oct  4 19:38 ..
+drwxr-xr-x 2 jenkins jenkins 4096 Oct  4 19:11 22
+drwxr-xr-x 2 jenkins jenkins 4096 Oct  4 19:13 23
+drwxr-xr-x 2 jenkins jenkins 4096 Oct  4 19:20 24
+drwxr-xr-x 2 jenkins jenkins 4096 Oct  4 19:24 25
+drwxr-xr-x 2 jenkins jenkins 4096 Oct  4 19:24 26
+drwxr-xr-x 2 jenkins jenkins 4096 Oct  4 19:38 27
+lrwxrwxrwx 1 jenkins jenkins    2 Oct  4 19:20 lastFailedBuild -> -1
+lrwxrwxrwx 1 jenkins jenkins    2 Oct  4 19:24 lastStableBuild -> 26
+lrwxrwxrwx 1 jenkins jenkins    2 Oct  4 19:24 lastSuccessfulBuild -> 26
+lrwxrwxrwx 1 jenkins jenkins    2 Oct  4 17:56 lastUnstableBuild -> -1
+lrwxrwxrwx 1 jenkins jenkins    2 Oct  4 19:20 lastUnsuccessfulBuild -> -1
+-rw-r--r-- 1 jenkins jenkins    0 Oct  4 17:56 legacyIds
++ cp -r /var/jenkins_home/jobs src/
++ cp -r /var/jenkins_home/logs src/
++ cp -r /var/jenkins_home/nodes src/
++ cp -r /var/jenkins_home/plugins src/
++ cp -r /var/jenkins_home/secrets src/
++ cp -r /var/jenkins_home/updates src/
++ cp -r /var/jenkins_home/userContent src/
++ cp -r /var/jenkins_home/users src/
++ cp -r /var/jenkins_home/workflow-libs src/
++ git config user.email jenkins@kube.com
++ git config user.name Jenkins
++ git add -A
++ git commit -m Jenkins backup job: Backup Jenkins-27
+[master ca7c5f6] Jenkins backup job: Backup Jenkins-27
+ 8 files changed, 94 insertions(+), 4 deletions(-)
+ create mode 100644 src/jobs/Backup Jenkins/builds/26/build.xml
+ create mode 100644 src/jobs/Backup Jenkins/builds/27/changelog.xml
+ create mode 100644 src/jobs/Backup Jenkins/builds/27/log
++ git push
+To https://github.com/pavel-mikhalchuk/kuberjenkins.git
+   a308371..ca7c5f6  master -> master
+Finished: SUCCESS
