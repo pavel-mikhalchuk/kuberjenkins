@@ -4,7 +4,7 @@
 cd /usr/share/jenkins/ref
 git clone https://pavel-mikhalchuk-belarus:123qweasd@github.com/pavel-mikhalchuk/kuberjenkins.git
 
-cp -r kuberjenkins/src/ .
+mv -T kuberjenkins/src/ .
 rm -rf kuberjenkins
 
 #Start Jenkins
