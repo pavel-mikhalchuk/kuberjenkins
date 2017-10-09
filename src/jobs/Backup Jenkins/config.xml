@@ -25,20 +25,14 @@
       <command>git clone https://pavel-mikhalchuk-belarus:123qweasd@github.com/pavel-mikhalchuk/kuberjenkins.git .</command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
-      <command>rm -rf src/*
-cp /var/jenkins_home/* src/ || exit 0</command>
+      <command>rm -rf src
+mkdir src
+cd ${JENKINS_HOME}
+cp -r `ls -a | egrep -v '(^\.$)|(^\.\.$)|(^war$)|(^workspace$)'` ${WORKSPACE}/src/
+cd ${WORKSPACE}</command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
-      <command>cp -r /var/jenkins_home/jobs src/
-cp -r /var/jenkins_home/logs src/
-cp -r /var/jenkins_home/nodes src/
-cp -r /var/jenkins_home/plugins src/
-cp -r /var/jenkins_home/secrets src/
-cp -r /var/jenkins_home/updates src/
-cp -r /var/jenkins_home/userContent src/
-cp -r /var/jenkins_home/users src/
-cp -r /var/jenkins_home/workflow-libs src/
-
+      <command>
 git config user.email &quot;jenkins@kube.com&quot;
 git config user.name &quot;Jenkins&quot;
 
